@@ -9,7 +9,7 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0D1117; color: #E6EDF3; }
         .mono { font-family: 'Roboto Mono', monospace; }
-        .github-green { color: #00ff9d; } /* 优化为你的品牌荧光绿 */
+        .github-green { color: #00ff9d; }
         .bg-github-card { background-color: #161B22; border: 1px solid #30363D; }
         .btn-glow:hover { box-shadow: 0 0 20px rgba(0, 255, 157, 0.4); }
     </style>
@@ -55,4 +55,97 @@
             <p class="text-gray-500">// Welcome to AddIdea</p>
             <p class="text-blue-400">const <span class="text-white">service</span> = {</p>
             <p class="pl-4">mission: <span class="text-green-400">"Build better software"</span>,</p>
-            <p
+            <p class="pl-4">expertise: [<span class="text-green-400">"Development"</span>, <span class="text-green-400">"Review"</span>],</p>
+            <p class="pl-4 text-gray-400">available: <span class="text-blue-400">true</span></p>
+            <p class="text-blue-400">};</p>
+        </div>
+    </header>
+
+    <section id="services" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold mb-12 text-center">Our Expertise</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-github-card p-8 rounded-2xl hover:border-[#00ff9d]/50 transition duration-300">
+                <div class="text-2xl mb-4">🛠️</div>
+                <h3 class="text-xl font-bold mb-2">Custom Dev</h3>
+                <p class="text-gray-400 text-sm">Tailored feature implementation based on your specific project needs.</p>
+            </div>
+            <div class="bg-github-card p-8 rounded-2xl hover:border-[#00ff9d]/50 transition duration-300">
+                <div class="text-2xl mb-4">🔍</div>
+                <h3 class="text-xl font-bold mb-2">Code Review</h3>
+                <p class="text-gray-400 text-sm">In-depth analysis to improve security, performance, and scalability.</p>
+            </div>
+            <div class="bg-github-card p-8 rounded-2xl hover:border-[#00ff9d]/50 transition duration-300">
+                <div class="text-2xl mb-4">🚀</div>
+                <h3 class="text-xl font-bold mb-2">Consulting</h3>
+                <p class="text-gray-400 text-sm">Architecture design and technical roadmap planning for startups.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-[#161B22] border-y border-[#30363D] py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 text-white">Transparent Pricing</h2>
+            <p class="text-gray-400 mb-12 text-lg font-medium">Choose a plan that fits your project scope.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-[#0D1117] p-8 rounded-2xl border border-[#30363D] text-left">
+                    <h3 class="text-xl font-bold mb-2">Standard Task</h3>
+                    <div class="text-3xl font-bold mb-4">$150 <span class="text-sm font-normal text-gray-500">/ per task</span></div>
+                    <ul class="text-gray-400 space-y-3 mb-8 text-sm">
+                        <li>✓ Bug fixing & Code optimization</li>
+                        <li>✓ 48-hour delivery</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/28EdR8duc3nld2120E0RG00" target="_blank" class="block w-full text-center py-3 rounded-lg border border-[#30363D] hover:bg-[#30363D] transition font-bold">
+                        Inquire Now
+                    </a>
+                </div>
+                <div class="bg-[#0D1117] p-8 rounded-2xl border-2 border-[#00ff9d] text-left relative">
+                    <span class="absolute -top-3 right-6 bg-[#00ff9d] text-black text-[10px] px-3 py-1 rounded-full uppercase font-bold">Popular</span>
+                    <h3 class="text-xl font-bold mb-2">Monthly Support</h3>
+                    <div class="text-3xl font-bold mb-4">$800 <span class="text-sm font-normal text-gray-500">/ month</span></div>
+                    <ul class="text-gray-400 space-y-3 mb-8 text-sm">
+                        <li>✓ Dedicated development hours</li>
+                        <li>✓ Priority bug fixing</li>
+                        <li>✓ Architecture review</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/28EdR8duc3nld2120E0RG00" target="_blank" class="block w-full text-center py-3 rounded-lg bg-[#238636] hover:bg-[#2ea44f] text-white transition font-bold shadow-lg btn-glow">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto px-6 py-20 border-t border-[#30363D] text-sm text-gray-500">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+            <div class="col-span-2">
+                <div class="text-white font-bold text-lg mb-4">AddIdea Code Services</div>
+                <p class="max-w-sm">Providing high-quality software solutions and open-source contributions worldwide. Secured payments via Stripe.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2">
+                    <li>Email: addidea63@gmail.com</li>
+                    <li>GitHub: @addidea</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Policy</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="hover:underline">Refund Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#30363D]">
+            <p>© 2026 AddIdea. All rights reserved.</p> <div class="flex items-center gap-4 mt-4 md:mt-0">
+                <a href="https://buy.stripe.com/28EdR8duc3nld2120E0RG00" target="_blank" class="hover:opacity-80 transition">
+                    <img src="https://img.shields.io/badge/Powered%20by-Stripe-blue" alt="Stripe Badge">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

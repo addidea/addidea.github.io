@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddIdea | Professional Code Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0D1117; color: #E6EDF3; }
+        .mono { font-family: 'Roboto Mono', monospace; }
+        .github-green { color: #2EA44F; }
+        .bg-github-card { background-color: #161B22; border: 1px solid #30363D; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="sticky top-0 z-50 bg-[#0D1117]/80 backdrop-blur-md border-b border-[#30363D] px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold flex items-center gap-2">
+                <span class="github-green tracking-tighter text-2xl">AddIdea</span>
+                <span class="text-xs bg-[#30363D] px-2 py-1 rounded-full text-gray-400">Services</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+                <a href="#services" class="hover:text-[#2EA44F] transition">Services</a>
+                <a href="#pricing" class="hover:text-[#2EA44F] transition">Pricing</a>
+                <a href="https://github.com/addidea" target="_blank" class="hover:text-[#2EA44F] transition">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h1 class="text-5xl font-extrabold leading-tight mb-6">
+                Turn Ideas into <span class="github-green">Clean Code.</span>
+            </h1>
+            <p class="text-lg text-gray-400 mb-8">
+                Professional software development, code optimization, and technical consulting. Built by the creators of <span class="mono text-blue-400 text-sm">addidea</span>.
+            </p>
+            <div class="flex gap-4">
+                <a href="#pricing" class="bg-[#238636] hover:bg-[#2ea44f] text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg">View Services</a>
+                <a href="mailto:your-email@example.com" class="bg-[#21262D] hover:bg-[#30363d] border border-[#30363D] px-8 py-3 rounded-lg font-semibold transition">Contact Us</a>
+            </div>
+        </div>
+        <div class="bg-[#010409] rounded-xl border border-[#30363D] p-6 shadow-2xl mono text-sm shadow-[#2EA44F]/5">
+            <div class="flex gap-2 mb-4">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <p class="text-gray-500">// Welcome to AddIdea</p>
+            <p class="text-blue-400">const <span class="text-white">service</span> = {</p>
+            <p class="pl-4">mission: <span class="text-green-400">"Build better software"</span>,</p>
+            <p class="pl-4">expertise: [<span class="text-green-400">"Development"</span>, <span class="text-green-400">"Review"</span>],</p>
+            <p class="pl-4 text-gray-400">available: <span class="text-blue-400">true</span></p>
+            <p class="text-blue-400">};</p>
+        </div>
+    </header>
+
+    <section id="services" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold mb-12 text-center">Our Expertise</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-github-card p-8 rounded-2xl hover:border-[#2EA44F]/50 transition duration-300">
+                <div class="text-2xl mb-4">🛠️</div>
+                <h3 class="text-xl font-bold mb-2">Custom Dev</h3>
+                <p class="text-gray-400 text-sm">Tailored feature implementation based on your specific project needs.</p>
+            </div>
+            <div class="bg-github-card p-8 rounded-2xl hover:border-[#2EA44F]/50 transition duration-300">
+                <div class="text-2xl mb-4">🔍</div>
+                <h3 class="text-xl font-bold mb-2">Code Review</h3>
+                <p class="text-gray-400 text-sm">In-depth analysis to improve security, performance, and scalability.</p>
+            </div>
+            <div class="bg-github-card p-8 rounded-2xl hover:border-[#2EA44F]/50 transition duration-300">
+                <div class="text-2xl mb-4">🚀</div>
+                <h3 class="text-xl font-bold mb-2">Consulting</h3>
+                <p class="text-gray-400 text-sm">Architecture design and technical roadmap planning for startups.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-[#161B22] border-y border-[#30363D] py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 text-white">Transparent Pricing</h2>
+            <p class="text-gray-400 mb-12 text-lg font-medium">Choose a plan that fits your project scope.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-[#0D1117] p-8 rounded-2xl border border-[#30363D] text-left">
+                    <h3 class="text-xl font-bold mb-2">Standard Task</h3>
+                    <div class="text-3xl font-bold mb-4">$150 <span class="text-sm font-normal text-gray-500">/ per task</span></div>
+                    <ul class="text-gray-400 space-y-3 mb-8 text-sm">
+                        <li>✓ Bug fixing & Code optimization</li>
+                        <li>✓ 48-hour delivery</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-lg border border-[#30363D] hover:bg-[#30363D] transition font-bold">Inquire Now</button>
+                </div>
+                <div class="bg-[#0D1117] p-8 rounded-2xl border-2 border-[#2EA44F] text-left relative">
+                    <span class="absolute -top-3 right-6 bg-[#2EA44F] text-white text-[10px] px-3 py-1 rounded-full uppercase font-bold">Popular</span>
+                    <h3 class="text-xl font-bold mb-2">Monthly Support</h3>
+                    <div class="text-3xl font-bold mb-4">$800 <span class="text-sm font-normal text-gray-500">/ month</span></div>
+                    <ul class="text-gray-400 space-y-3 mb-8 text-sm">
+                        <li>✓ Dedicated development hours</li>
+                        <li>✓ Priority bug fixing</li>
+                        <li>✓ Architecture review</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-lg bg-[#238636] hover:bg-[#2ea44f] text-white transition font-bold shadow-lg shadow-[#2ea44f]/20">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto px-6 py-20 border-t border-[#30363D] text-sm text-gray-500">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+            <div class="col-span-2">
+                <div class="text-white font-bold text-lg mb-4">AddIdea Code Services</div>
+                <p class="max-w-sm">Providing high-quality software solutions and open-source contributions worldwide. Secured payments via Stripe.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2">
+                    <li>Email: your-email@example.com</li>
+                    <li>GitHub: @addidea</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Policy</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="hover:underline">Refund Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#30363D]">
+            <p>© 2024 AddIdea. All rights reserved.</p>
+            <div class="flex items-center gap-4 mt-4 md:mt-0">
+                <img src="https://img.shields.io/badge/Powered%20by-Stripe-blue" alt="Stripe Badge">
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
